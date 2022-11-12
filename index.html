@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="allDiv">First Div</div>
+    <script>
+        const allDiv=document.getElementsByClassName('allDiv')
+        console.log(allDiv)
+    </script>
+    <div class="allDiv">Second Div</div>
+    <ul id="element">
+        <li class="list-item">First Element</li>
+        <li class="list-item">Second Element</li>
+        <li class="list-item">Third Element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)
+        // console.log(document.body.firstChild) // it will consider textNode as a firstChild
+        // console.log(document.body.lastChild) // Similary for lastChild 
+        // console.log(document.body.firstElementChild) //it will consider <ul> tag as first Child
+        // console.log(document.body.lastElementChild) //Similary for the lastElementChild of body tag
+        // for(node of document.body.childNodes){ // similarly we can do for children
+        //     console.log(node)
+        // }
+
+        // const childrenOfBody = Array.from(document.body.children)
+        // console.log(childrenOfBody)
+
+        // Siblings
+        // console.log(document.body.children[0])
+        // const ulTag=document.body.children[0]
+        // const firstLi=ulTag.children[0]
+        // const secondLi=ulTag.children[1]
+        // console.log(ulTag.nextElementSibling)
+        // console.log(secondLi.previousElementSibling.textContent)
+
+        // const tableTag=document.body.children[1]
+        // console.log(tableTag)
+        // console.log(tableTag.tBodies[0].rows[0].cells[0].textContent)
+        
+
+        // Search element by ID
+        console.log(element)
+        // element.style.background="red"
+
+        // const ulTag=document.getElementById("element")
+        // ulTag.style.backgroundColor='green'
+
+        // const listItem=document.getElementsByClassName('list-item')
+        // console.log(listItem)
+        
+        // ByTagName
+        // console.log(document.getElementsByTagName('table'))
+
+        // const listItemID=document.querySelector('#element')
+        // const listItem=document.querySelectorAll('.list-item')
+        // console.log(listItem,listItemID)
+
+        // const listItem=document.querySelectorAll('ul > li:nth-child(2)')
+        // console.log(listItem[0].textContent)
+
+
+        
+    </script>
+</body>
+</html>
